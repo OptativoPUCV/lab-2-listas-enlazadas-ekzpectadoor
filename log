@@ -7,3 +7,17 @@ Fri, Mar 28, 2025 12:03:50 PM:
  1 file changed, 31 insertions(+), 2 deletions(-)
  tests:  0|0
 79cb3f0
+Fri, Mar 28, 2025 12:08:34 PM: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'nextList':
+list.c:55:5: error: 'return' with no value, in function returning non-void [-Werror]
+     return;
+     ^~~~~~
+list.c:49:8: note: declared here
+ void * nextList(List * list) {
+        ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+fdc2bd6
